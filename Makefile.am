@@ -12,7 +12,7 @@ PASSWORD = $MYSQL_PASSWORD
 @echo $(PASSWORD)
 @echo $(MYSQL_PASSWORD)
 
-installdb: uninstalldb
+installdb:
 	mysql -u root -p$(PASSWORD) < ./installdb.sql;
 
 uninstalldb:
